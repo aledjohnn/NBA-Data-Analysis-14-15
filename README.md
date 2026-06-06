@@ -23,12 +23,12 @@ This notebook investigates three questions about the 2014–15 NBA season using 
 - A Welch t-test (p = 0.367) finds no statistically significant difference in two-way impact between high-usage "stars" and role players, consistent with the offensive burden hypothesis: stars take harder, more contested shots that naturally reduce efficiency metrics
 
 **Rest days vs. win rate**
-- Win rates across 1-day, 2-day, 3-day, and 4+ day rest groups all sit within 95% confidence intervals that overlap 0.5 — no rest group shows a statistically significant edge
+- Win rates across 1-day, 2-day, 3-day, and 4+ day rest groups all sit within 95% confidence intervals that overlap 0.5, no rest group shows a statistically significant edge
 - Chi-squared test: χ² = 2.26, p = 0.52. Confirmed by a Monte Carlo permutation test (p = 0.40) using a custom Linear Congruential Generator built from scratch rather than R's built-in `sample()`
 
 **Altitude home advantage**
 - Denver Nuggets (Ball Arena, 5,280 ft) and Utah Jazz (Delta Center, 4,226 ft) play at two of the highest venues in professional sport
-- Home/away FG% gaps are compared between altitude games and the rest of the league, with a specific focus on three-point accuracy — the shot type most sensitive to air resistance and ball arc
+- Home/away FG% gaps are compared between altitude games and the rest of the league, with a specific focus on three-point accuracy, the shot type most sensitive to air resistance and ball arc
 - A two-proportion z-test tests whether home teams at altitude shoot significantly better than home teams elsewhere, and whether visiting teams shoot meaningfully worse at altitude venues than at sea level
 
 ---
@@ -88,7 +88,7 @@ IRkernel::installspec()
 ```bash
 jupyter notebook nba_data_analysis.ipynb
 ```
-Run all cells top to bottom — the notebook is fully sequential.
+Run all cells top to bottom, the notebook is fully sequential.
 
 ---
 
