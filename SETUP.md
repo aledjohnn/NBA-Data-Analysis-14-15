@@ -8,7 +8,7 @@
 
 ## R Packages Required
 
-All packages used are from base R — no additional installs needed.
+All packages used are from base R, no additional installs needed.
 
 ## Data Setup
 
