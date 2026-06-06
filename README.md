@@ -1,6 +1,6 @@
 # NBA 2014–15 Season: Exploratory Data Analysis
 
-**Authors:** Aled John & Roman Galaky | Cardiff University — MA2502  
+**Authors:** Aled John & Roman Galaky, Cardiff University — MA2502  
 **Language:** R (Jupyter Notebook, IR kernel)  
 **Dataset:** [NBA Shot Logs 2014–15](https://www.kaggle.com/datasets/dansbecker/nba-shot-logs) — 124,343 shot attempts across 903 games
 
@@ -19,7 +19,7 @@ This notebook investigates three questions about the 2014–15 NBA season using 
 ## Key Findings
 
 **Two-way impact**
-- Top performers by Impact Score are dominated by efficient rim-protecting big men — Deandre Jordan, Tyson Chandler, Rudy Gobert — who score at high percentages and suppress opponent shooting during their time on court
+- Top performers by Impact Score are dominated by efficient rim-protecting big men (centers) Deandre Jordan, Tyson Chandler, Rudy Gobert. These players score at high percentages and suppress opponent shooting during their time on court
 - A Welch t-test (p = 0.367) finds no statistically significant difference in two-way impact between high-usage "stars" and role players, consistent with the offensive burden hypothesis: stars take harder, more contested shots that naturally reduce efficiency metrics
 
 **Rest days vs. win rate**
@@ -50,8 +50,10 @@ This notebook investigates three questions about the 2014–15 NBA season using 
 ## Project Structure
 
 ```
-nba-eda-home-advantage/
+NBA-Data-Analysis-14-15/
 ├── README.md
+├── README.tex
+├── SETUP.md
 ├── nba_data_analysis.ipynb     ← main analysis notebook
 ├── data/
 │   ├── Shot_data_clean.csv     ← place Kaggle data here (see setup below)
@@ -66,8 +68,8 @@ nba-eda-home-advantage/
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/aled-john/nba-eda-home-advantage.git
-cd nba-eda-home-advantage
+git clone https://github.com/aled-john/NBA-Data-Analysis-14-15.git
+cd NBA-Data-Analysis-14-15
 ```
 
 **2. Get the data**  
@@ -92,20 +94,7 @@ Run all cells top to bottom — the notebook is fully sequential.
 
 ## Authorship Note
 
-This notebook was produced as part of a 7-person group project for MA2502 at Cardiff University. **Aled John and Roman Galaky** are responsible for the analyses in this notebook specifically — the two-way impact model (Section 1), the rest days analysis (Section 2), and the altitude home advantage extension (Section 3).
+This notebook was produced as part of a 7 person group project for MA2502 at Cardiff University. **Aled John and Roman Galaky** are responsible for the analyses in this notebook specifically, the two-way impact model (Section 1), the rest days analysis (Section 2), and the altitude home advantage extension (Section 3).
 
 The full group report covering all five analytical questions is included in `output/group_report.pdf`.
 
----
-
-## Context and CV Relevance
-
-The methods used here map directly onto data-driven decision-making in finance and insurance:
-
-- **Impact Score design** mirrors actuarial composite risk scoring — weighting multiple variables into a single defensible metric
-- **Monte Carlo permutation testing** using a custom LCG parallels simulation methods used in insurance pricing and stress testing
-- **Budget-constrained optimisation thinking** (maximising impact under shot-volume classification) reflects the same logic as portfolio construction and premium modelling
-
----
-
-*Part of a broader data analysis portfolio — see also the [FIFA World Cup 2026 Fantasy Team Optimiser](https://github.com/aled-john/wc2026-fantasy-optimizer) (coming soon)*
