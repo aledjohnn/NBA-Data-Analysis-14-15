@@ -1,6 +1,6 @@
 # NBA 2014–15 Season: Exploratory Data Analysis
 
-**Authors:** Aled John & Roman Galaky, Cardiff University, MA2502  
+**Authors:** Aled John & Roman Galaky, Cardiff University  
 **Language:** R (Jupyter Notebook, IR kernel)  
 **Dataset:** [NBA Shot Logs 2014–15](https://www.kaggle.com/datasets/dansbecker/nba-shot-logs) — 124,343 shot attempts across 903 games
 
